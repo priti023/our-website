@@ -1,0 +1,28 @@
+<mat-toolbar color = "primary" >
+    <span >
+       <img class="image" src="../../assets/logo.jpg" (click)="logo()">
+    </span>
+    <span class = "filler"></span>
+    <span class = "gap">
+            <select class="education"  [(ngModel)]="selectedOptio" 
+            (change)="selectOption($event.target.value)">
+            <option value="">Education</option>
+            <option value="1" >Java</option>
+            <option value="2">Angular7</option>
+            <option value="3">HTML</option>
+            <option value="4">CSS</option>
+            <option value="5">JavaScript</option>
+            <option value="6">ReactJS</option>
+            <option value="7">Ionic</option>
+          </select>
+    </span>
+    <span class = "gap" (click)="commerce()">Commerce-Point</span>
+    <span class = "gap" (click)="samudra()">Samudra-Shastra</span>
+    <span class = "gap" (click)="vastu()">Vastu-Shastra</span>
+    <span class = "gap" (click)="sale()">Sale/Purchase</span>
+    <span class = "gap" (click)="physical()">Physical-Education</span>
+    <span class = "gap" (click)="home">Part of life Routine</span>
+</mat-toolbar>
+<div class="container-fluid">
+<!-- <img (click)="logo()"  src="../../assets/logo.jpg" class="logo">
+</div> -->

@@ -1,0 +1,34 @@
+.profile{
+    /* text-align: right; */
+    background-image: url(../../assets/profile-bg.jpg);
+  }
+  .profileImg{
+    border-radius: 25%;
+    height: 50px;
+    width: 50px;
+  }
+  .event{
+      /* text-align: center; */
+      border: 1px solid black;
+      background-color:floralwhite;
+      border-radius: 27%;
+      /* margin-top: 66px; */
+      width: 750px;
+  }
+  h2{
+    text-align: center;
+  }
+  hr{
+    border: 2px solid;
+    width: 350px;
+    color: black;
+  }
+  .pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+  
+    background-image: none !important;
+    height: 0px;
+    content:none !important;
+    margin: 0;
+    padding: 0;
+  }

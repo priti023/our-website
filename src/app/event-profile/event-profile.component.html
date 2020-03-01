@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="row ">
+    <div class="col-md-11 buy">
+    <button class="btn btn-primary" (click)="ticketfair()">Buy</button>
+</div>
+</div>
+<!-- <div class="container event">
+    <h3>Event Profile</h3>
+    <hr>
+    <div class="eventprofile">
+    <div class="row">
+        <div class="col-3">Event Name:</div>
+        <div class="col-3">{{eventDetails.eventName}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Event Type:</div>
+        <div class="col-3">{{eventDetails.eventType}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Event Location:</div>
+        <div class="col-3">{{eventDetails.eventLocation}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Event Start Date:</div>
+        <div class="col-3">{{eventDetails.startDate}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Event End Date:</div>
+        <div class="col-3">{{eventDetails.endDate}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Event Description:</div>
+        <div class="col-3">{{eventDetails.description}}</div>
+    </div>
+</div>
+</div>
+
+<div>
+    <h2>All Events</h2>
+
+<table id="t01">
+  <tr>
+    <th>Event Name</th>
+    <th>Event Type</th> 
+    <th>Event Location</th>
+    <th>Event Start Date</th>
+    <th>Event End Date</th>
+    <th>Event Description</th>
+  </tr>
+  <tr>
+    <td>{{eventDetails.eventName}}</td>
+    <td>{{eventDetails.eventType}}</td>
+    <td>{{eventDetails.eventLocation}}</td>
+    <td>{{eventDetails.startDate}}</td>
+    <td>{{eventDetails.endDate}}</td>
+    <td>{{eventDetails.description}}</td>
+  </tr>
+</table>
+<br> -->
+
+
+<!-- </div> -->
+<div *ngIf="testData">
+<div class="table table-responsive smart-table">
+    <ng2-smart-table [settings]="settings" [source]="testData" ></ng2-smart-table>
+</div>
+</div>
+<div *ngIf="!testData">
+    data not available
+</div>

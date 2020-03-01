@@ -1,0 +1,15 @@
+
+#title{
+    font-size: 4rem;
+    color: darkred;
+}
+#home{
+    text-align: center;
+}
+.homepageButton{
+    margin: 30px;
+    font-size: 3rem;
+    background-color: blue;
+    border-color: green;
+    color: white;
+}

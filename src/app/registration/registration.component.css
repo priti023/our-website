@@ -1,0 +1,36 @@
+
+#title{
+    font-size: 4rem;
+    color: white;
+}
+.registrationpage{
+    text-align: center;
+}
+#home{
+    text-align: center;
+}
+.homepageButton1{
+    margin: 10px;
+    font-size: 3rem;
+    background-color: gray;
+    border-color: green;
+    color: white;
+}
+.homepageButton{
+    margin: 10px;
+    font-size: 3rem;
+    background-color: green;
+    color: white;
+}
+#home1{
+    background-image: url("/assets/images.png");
+    height: 900px;
+}
+.login{
+   color: white;
+   /* font-size: 1.25rem; */
+   margin-top: 10px;
+}
+#submitButton{
+    text-align: center;
+}

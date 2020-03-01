@@ -1,0 +1,19 @@
+.logo{
+    height: 81px;
+    width: 81px;
+}
+.gap {
+    margin-right: 30px;
+ }
+ .filler {
+    flex: 1 1 auto;
+ }
+ .image{
+     height: 65px;
+     border-radius: 50%;
+ }
+ .education{
+    background: #3f51b5;
+    color: #fff;
+    border: none;
+ }

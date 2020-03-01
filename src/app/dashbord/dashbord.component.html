@@ -1,0 +1,23 @@
+<app-header></app-header><br>
+<div class="container-fluid">
+<div class="row dashbord">
+   
+    <div  >
+        <button class="btn btn-primary" (click)="eventregister()">Register Your Events</button>
+    </div>
+    <div >
+        <button class="btn btn-primary" (click)="allEvents()">All Events</button>
+    </div>
+    <div class="row profile">
+        <div>
+            <img class="profileImg" src="../../assets/1.jpg"><br>
+            <a>Name:{{userDetails.firstName +" "+ userDetails.lastName}}</a><br>
+            <a>Email:{{userDetails.email}}</a><br>
+            <button class="btn btn-primary" (click)="myprofile()">My Profile</button>
+            <button (click)="logout()">LogOut</button>
+            
+        </div>
+    </div>
+    
+</div>
+</div>

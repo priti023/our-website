@@ -1,0 +1,29 @@
+<div class="container update">
+    <h3>My Profile</h3>
+    <hr>
+    <div class="myprofile">
+    <div class="row">
+        <div class="col-3">NAME:</div>
+        <div class="col-9">{{userDetails.firstName +" "+ userDetails.lastName}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">EmailId:</div>
+        <div class="col-9">{{userDetails.email}}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">PhoneNumber:</div>
+        <div class="col-9">{{userDetails.phonenumber}}</div>
+    </div>
+</div>
+    <div class="row button">
+        <div class="col-3"></div>
+        <div class="col-4">
+    <button class="btn btn-primary" (click)="updateProfile()">Update Profile</button><br>
+</div>
+<div class="col-2">
+    <button (click)="logout()">LogOut</button>
+    </div>
+    
+</div>
+
+</div>

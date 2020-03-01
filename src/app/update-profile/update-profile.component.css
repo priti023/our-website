@@ -1,0 +1,16 @@
+.update{
+    text-align: center;
+    border: 1px solid black;
+    background-color: cornsilk;
+    border-radius: 27%;
+    margin-top: 66px;
+    width: 750px;
+}
+.updatetext{
+    text-align: center;
+}
+hr{
+    border: 2px solid;
+    width: 350px;
+    color: black;
+}

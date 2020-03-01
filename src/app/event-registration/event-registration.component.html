@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="container event">
+    <h2>Register Your Event</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label>Event Name</label><br>
+                    <input type="text" formControlName="eventName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.eventName.errors }" />
+                    <div *ngIf="submitted && f.eventName.errors" class="invalid-feedback">
+                        <div *ngIf="f.eventName.errors.required">Event Name is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Event Type</label><br>
+                    <input type="text" formControlName="eventType" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.eventType.errors }" />
+                    <div *ngIf="submitted && f.eventType.errors" class="invalid-feedback">
+                        <div *ngIf="f.eventType.errors.required">Event Type is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Event Location</label><br>
+                    <input type="text" formControlName="eventLocation" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.eventLocation.errors }" />
+                    <div *ngIf="submitted && f.eventLocation.errors" class="invalid-feedback">
+                        <div *ngIf="f.eventLocation.errors.required">Event Location is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Start Date</label><br>
+                    <input type="date" formControlName="startDate" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.startDate.errors }" />
+                    <div *ngIf="submitted && f.startDate.errors" class="invalid-feedback">
+                        <div *ngIf="f.startDate.errors.required">Start Date is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>End Date</label><br>
+                    <input type="date" formControlName="endDate" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.endDate.errors }" />
+                    <div *ngIf="submitted && f.endDate.errors" class="invalid-feedback">
+                        <div *ngIf="f.endDate.errors.required">Start Date is required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Description</label><br>
+                    <textarea  formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" ></textarea>
+                    <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                        <div *ngIf="f.description.errors.required">Event Type is required</div>
+                    </div>
+                </div>
+                <div class="form-group" id="submitButton">
+                    <button class="btn btn-primary" >SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
